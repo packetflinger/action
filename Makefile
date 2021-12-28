@@ -1,4 +1,4 @@
-#include .config
+-include .config
 
 ifndef CPU
 	CPU := $(shell uname -m | sed -e s/i.86/i386/ -e s/amd64/x86_64/ -e s/sun4u/sparc64/ -e s/arm.*/arm/ -e s/sa110/arm/ -e s/alpha/axp/)
